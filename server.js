@@ -29,7 +29,7 @@ app.use('/route', router);
 
 // home route
 app.get('/', (req, res) =>{
-    res.render('base', { title : "Login System"});
+    res.render('base.ejs', { title : "Login System"});
 })
 
-app.listen(port, ()=>{ console.log("Lostening to the server on http://localhost:3000")});
+app.listen(port, ()=>{ console.log("Listening to the server on http://localhost:3000")});
